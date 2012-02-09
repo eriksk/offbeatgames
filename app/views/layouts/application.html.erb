@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Offbeat Games</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "bootstrap/css/bootstrap" %>
+  
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "bootstrap/js/bootstrap" %>
+  
+  <%= csrf_meta_tags %>	
+</head>
+<body>
+
+	<div class="topbar">
+		<div class="header">		
+			<div class="container">
+				<a href="/"><h1>Offbeat Games</h1></a>
+				<ul class="nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Games</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<%= yield %>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="span4">
+					<h3>Header1</h3>
+					<p>Some text to prove that we are the best in the industry.</p>
+					<ul>
+						<li>Selling point 1</li>
+						<li>Selling point 2</li>
+						<li>Selling point 3</li>
+						<li>Selling point 5</li>
+						<li>Selling point 6</li>
+					</ul>
+				</div>
+				
+				<div class="span4">
+					<h3>Header2</h3>
+					<p>This is some more text to prove the point. This is some more text to prove the pointThis is some more text to prove the pointThis is some more text to prove the pointThis is some more text to prove the pointThis is some more text to prove the pointThis is some more text to prove the point</p>
+				</div>
+				
+				<div class="span4">
+					<h3>Header3</h3>
+						<p>And then the selling point that will blow your mind!</p>
+				</div>
+			</div>
+		</div>		
+		<div id="footer-floor">
+			<div class="container">
+				<div class="pull-right">
+					<a href="https://twitter.com/Th3dz" class="" data-show-count="false">Follow us on twitter @Th3dz</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>					
+				</div>
+				<p>Copyright &copy; Erik Skoglund 2012</p>				
+			</div>
+		</div>
+	</footer>
+	
+</body>
+</html>
