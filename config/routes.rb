@@ -1,7 +1,18 @@
 Offbeatgames::Application.routes.draw do
 
 	root :to => 'home#index'
-  # The priority is based upon order of creation:
+
+	get 'blog' => 'blog#index'
+	
+	get 'game' => 'game#index'
+	
+	get 'contact' => 'contact#index'
+	
+	get 'press' => 'press#index'
+	
+
+	
+	# The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:

@@ -3,33 +3,32 @@ body {
   line-height:20px;
 }
 
- .topbar .header {
+.topbar .header{
 	background-color:#F8F8F8;
-	border-bottom-color:#E0E0E0;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
-	padding-bottom:0;
-	padding-left:0;
-	padding-right:0;
-	padding-top:9px;
+  border-bottom-color:#E0E0E0;
+  border-bottom-style:solid;
+  border-bottom-width:1px;
+  padding-bottom:0;
+  padding-left:0;
+  padding-right:0;
+  padding-top:9px;
+  }
+    
+.topbar .nav {
+  float:right;
 }
 
-.navbar .nav {
-	display:block;
+.topbar .nav li{
 	float:left;
-	left:0;
-	margin-bottom:0;
-	margin-left:0;
-	margin-right:10px;
-	margin-top:0;
-	position:relative;
-}
-.navbar .nav li{
-	float:left;
+	padding:10px;
 }
 
 .center{
 	text-align:center;
+}
+
+.logo{
+	width:168px;
 }
   
  .hero {
@@ -52,6 +51,10 @@ body {
   padding-right:0;
   padding-top:30px;
  }
+ 
+ .main-content{ 
+  margin-bottom:300px;
+}
  
 footer{
   background-color:#252525;

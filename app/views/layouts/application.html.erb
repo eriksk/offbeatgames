@@ -15,42 +15,44 @@
 	<div class="topbar">
 		<div class="header">		
 			<div class="container">
-				<a href="/"><h1>Offbeat Games</h1></a>
-				<ul class="nav">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Games</a></li>
-					<li><a href="#">Press</a></li>
-					<li><a href="#">Contact</a></li>
+				<a href="/"><%= image_tag "offbeat-logo.png", { class: "logo"}  %></a>		
+				<ul class="nav nav-pills">
+					<li><%= link_to 'Blog', {controller:'blog', action:'index'}, class:request.fullpath.starts_with?("/blog") ? "btn" : ""  %></li>
+					<li><%= link_to 'Games', {controller:'game', action:'index'}, class:request.fullpath.starts_with?("/game") ? "btn" : ""  %></li>
+					<li><%= link_to 'Press', {controller:'press', action:'index'}, class:request.fullpath.starts_with?("/press") ? "btn" : ""  %></li>
+					<li><%= link_to 'Contact', {controller:'contact', action:'index'}, class:request.fullpath.starts_with?("/contact") ? "btn" : ""  %></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	
-	<%= yield %>
+	<div class="main-content">
+		<%= yield %>
+	</div>
 	
 	<footer>
 		<div class="container">
 			<div class="row">
 				<div class="span4">
-					<h3>Header1</h3>
-					<p>Some text to prove that we are the best in the industry.</p>
+					<h3>Multiple Platforms</h3>
+					<p>We develop games for many platforms including:</p>
 					<ul>
-						<li>Selling point 1</li>
-						<li>Selling point 2</li>
-						<li>Selling point 3</li>
-						<li>Selling point 5</li>
-						<li>Selling point 6</li>
+						<li>Windows</li>
+						<li>Mac OSX</li>
+						<li>Linux</li>
+						<li>Windows Phone 7</li>
+						<li>Xbox 360</li>
 					</ul>
 				</div>
 				
 				<div class="span4">
-					<h3>Header2</h3>
-					<p>This is some more text to prove the point. This is some more text to prove the pointThis is some more text to prove the pointThis is some more text to prove the pointThis is some more text to prove the pointThis is some more text to prove the pointThis is some more text to prove the point</p>
+					<h3>Fun</h3>
+					<p>Our games are all about fun. There's really not more to it!</p>
 				</div>
 				
 				<div class="span4">
-					<h3>Header3</h3>
-						<p>And then the selling point that will blow your mind!</p>
+					<h3>Indie?</h3>
+					<p>We are not only indepent. We also make everything in house. Including code, art, music and sound fx.</p>
 				</div>
 			</div>
 		</div>		
